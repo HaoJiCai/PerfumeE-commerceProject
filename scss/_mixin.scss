@@ -1,0 +1,6 @@
+/*------ 圖片取代文字 ------*/
+@mixin replaceText {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;    
+}

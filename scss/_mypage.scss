@@ -1,0 +1,36 @@
+.mypage{
+  margin-bottom: 80px;
+  @include media-breakpoint-down(md){
+    margin-bottom: 40px;    
+  }
+  &-menu{
+    a:hover{
+      text-decoration-line: $link-hover-decoration;  
+    }
+  }
+}
+.mypage-content{
+  li{
+    a{
+      display: inline;
+      &:hover{
+        border-bottom: 2px solid $primary;
+        transition: 0.3s;
+      }
+    }
+    &:nth-child(1){
+      a{
+        border-bottom: 2px solid $primary;
+      }
+    }
+  }
+  .text-point{
+    font-size: $font-size-sm;
+    color: #A5A5A5;
+  }
+  .mobile-size{
+    @include media-breakpoint-down(sm){
+      padding-left: 11px;
+    }
+  }      
+}

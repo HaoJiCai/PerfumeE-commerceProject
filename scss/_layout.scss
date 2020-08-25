@@ -1,0 +1,66 @@
+/*------header Start------*/
+.header{
+  .navbar{
+    justify-content: space-between;
+    .shopping_cart-mb{
+      position: relative;
+      display: none;
+      @include media-breakpoint-down(md){
+        display: initial;
+      }
+      .shopping_cart-number{
+        font-size: 12px;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -20%;
+        left: 70%;
+        border-radius: 7px;
+      }
+    }
+  }
+  h1{
+    a{
+      display: block;
+      background: center center no-repeat url(../images/logo.png);
+      @include replaceText;
+    }
+  }
+}
+/*------header End------*/
+/*------footer Start------*/
+.footer{
+  p{
+    font-size: 14px;
+  }
+  &-introduce{
+    height: 600px; 
+    background: center no-repeat url(../images/footer-banner.png);
+    background-size: cover;
+    h2{
+      font-weight: bold;
+      margin-top: 312px;
+    }
+    .input-Text{
+      height: auto;
+      border: 2px solid $primary;
+    }
+    @include media-breakpoint-down(xs){
+      display: block;
+      height: 600px;
+      background: center no-repeat url(../images/footer-banner-iPad.png);
+      background-size: cover;
+    }
+  }
+  &-nav{
+    li{
+      &:nth-child(1){
+        margin-right: 32px;
+      }
+      &:nth-child(2){
+        margin-right: 32px;        
+      }
+    }
+  }
+}
+/*------footer End------*/
