@@ -13406,30 +13406,34 @@ a.text-gray-lighter:hover, a.text-gray-lighter:focus {
   }
 }
 
+.index {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1199.98px) {
-  .products img {
+  .index img {
     width: 100%;
   }
 }
 
-.products-image {
+.index-image {
   text-align: right;
 }
 
 @media (max-width: 1199.98px) {
-  .products-image {
+  .index-image {
     text-align: left;
   }
 }
 
-.products button {
+.index button {
   font-size: 1.25rem;
   border: 2px solid black;
   border-radius: 30px;
   padding: 18px 0;
 }
 
-.products button:hover {
+.index button:hover {
   background-color: #dad5d5;
   -webkit-transition: 0.2s;
   transition: 0.2s;

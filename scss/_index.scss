@@ -41,7 +41,8 @@
     }
   }
 }
-.products{
+.index{
+  margin-bottom: 0;
   img{
     @include media-breakpoint-down(lg){
       width: 100%;
@@ -50,7 +51,7 @@
   &-image{
     text-align: right;
     @include media-breakpoint-down(lg){
-    text-align: left;
+      text-align: left;
     }
   }
   button{
